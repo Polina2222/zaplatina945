@@ -1,0 +1,29 @@
+<main class="purchases-list container">
+    <h1 class="text-center">Список покупок</h1>
+    <div class="d-flex justifycontent-end">
+      <button (click)="toggleSortType()" class="btn btn-info mr-3">
+        Сортировка по наименованию
+      </button>
+      <a routerLink="add" class="btn btn-info">Добавить покупку</a>
+    </div>
+    
+    <ul class="list-group mt-5">
+        <li *ngFor="let purchase of purchases | async | sortByTitle: TypeOf" [class.bg-success]="!purchase.isPurchased"
+            class="list-group-item d-flex justify-content-between align-items-center">
+          <div>
+            <span [class.text-black]="!purchase.isPurchased">{{purchase.title}}</span>
+            <span class="ml-2 badge bg-warning text-black badge-pill">{{purchase.quantity}}</span>
+          </div>
+          <div>
+            <a [routerLink]="'edit/'+purchase.id" class="btn btn-secondary mr-3">Редактировать</a>
+            <button (click)="toggleStatus(purchase)" [class.bg-secondary]="purchase.isPurchased"
+                    class="btn btn-warning" style="min-width: 140px">
+              {{purchase.isPurchased ? 'Куплено ':'Не куплено '}}
+            </button>
+          </div>
+        </li>
+      </ul>
+    
+  </main>
+  
+  

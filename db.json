@@ -1,0 +1,58 @@
+{
+  "purchases": [
+    {
+      "id": 1,
+      "title": "Рыба",
+      "quantity": "100",
+      "isPurchased": false
+    },
+    {
+      "id": 2,
+      "title": "Вода",
+      "quantity": "30",
+      "isPurchased": false
+    },
+    {
+      "id": 3,
+      "title": "Апельсин",
+      "quantity": "20",
+      "isPurchased": true
+    },
+    {
+      "id": 4,
+      "title": "Яблоки",
+      "quantity": "15",
+      "isPurchased": false
+    },
+    {
+      "title": "Мясо",
+      "quantity": 100,
+      "isPurchased": true,
+      "id": 11
+    },
+    {
+      "title": "Ириски",
+      "quantity": "15",
+      "isPurchased": false,
+      "id": 13
+    },
+    {
+      "title": "Бананы",
+      "quantity": 132,
+      "isPurchased": true,
+      "id": 14
+    },
+    {
+      "title": "Шоколад",
+      "quantity": 22,
+      "isPurchased": false,
+      "id": 15
+    },
+    {
+      "title": "Курица",
+      "quantity": 323,
+      "isPurchased": true,
+      "id": 16
+    }
+  ]
+}
